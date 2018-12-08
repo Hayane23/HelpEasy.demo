@@ -87,7 +87,7 @@ a{
 }
 
 body>section:nth-child(2){
-    z-index: -1;
+	z-index: -1;
     top:70px;
     height: calc(100vh - 70px);
     position: sticky;
