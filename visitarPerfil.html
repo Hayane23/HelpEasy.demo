@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- links css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/editarPerfil/section.css">
-    <link rel="stylesheet" href="css/editarPerfil/perfilEcapa.css">
-    <link rel="stylesheet" href="css/editarPerfil/dados.css">
-    <link rel="stylesheet" href="css/editarPerfil/sobre.css">
+    <link rel="stylesheet" href="css/visitarPerfil/dados.css">
+    <link rel="stylesheet" href="css/visitarPerfil/perfilEcapa.css">
+    <link rel="stylesheet" href="css/visitarPerfil/section.css">
     <link rel="shortcut icon" href="img/index/redes.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Handlee|Merienda" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
@@ -25,7 +23,7 @@
             <a href="home.html">Página Inicial</a>
             <a href="editarPerfil.html">Perfil</a>
             <a href="global.html">Global</a>
-            <a href="cadastrarOng.html">Cadastrar Ong</a>
+            <a href="perfilOng.html">Cadastrar Ong</a>
             <button><a href="index.html">Sair</a></button>
         </nav>
     </header>
@@ -34,59 +32,31 @@
             <img src="img/editarPerfil/fotoCapa" alt="foto de capa">
             <div>
                 <img src="img/editarPerfil/fotoPerfil.jpg" alt="foto de perfil">
-                <button>Trocar foto</button>
             </div>
-            <button>Trocar capa</button>
         </div>
         <div>
-            <div class="dados">
-                <div>
-                    <div>
-                        <p>Nome completo: Hayane Silva</p>
-                        <button>Editar</button>
-                    </div>
-                    <div>
-                        <p>Data de nascimento: 20/09/2001</p>
-                        <button>Editar</button>
-                    </div>
+            <div class="mae">
+                <div class="dados">
+                    <p>Nome completo: Hayane Silva</p>
+                    <p>Data de nascimento: 20/09/2001</p>
+                    <p>Genero: Femenino</p>
+                    <p>Cidade:  São Paulos, SP</p>
+                    <p>Bairro: Vargem Grande II</p>
+                    <p>Endereço: Rua Primavera Nº107</p>
                 </div>
-                <div>
+                <div class="sobre">
                     <div>
-                        <p>Genero:</p>
-                        <label for=""> <input type="radio">Feminino <input type="radio"> Masculino <input type="radio">Outros</label>
+                        <h2>Sobre Hayane:</h2>
+                        <p>Le para crianças, cuida de cachorros e tem disponibilidade de ensinar programação.</p>
                     </div>
                     <div>
-                        <p>CPF: --</p>
-                        <button>Editar</button>  
+                        <h2>Habilidades:</h2>
+                        <ul>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>js</li>
+                        </ul>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <p>Endereço: --</p>
-                        <button>Editar</button>
-                    </div>
-                    <div>
-                        <p>Cidade:  --</p>
-                        <button>Editar</button>
-                    </div>
-                    <div>
-                        <p>Bairro: --</p>
-                        <button>Editar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="sobre">
-                <h2>Sobre mim:</h2>
-                <div>
-                    <p>Le para crianças, cuida de cachorros e tem disponibilidade de ensinar programação.</p>
-                    <button>Editar</button>
-                </div>
-                <h2>Habilidades:</h2>
-                <div>
-                    <p>html</p>
-                    <p>css</p>
-                    <p>js</p>
-                    <button>+</button>
                 </div>
             </div>
             <div class="comentarios">

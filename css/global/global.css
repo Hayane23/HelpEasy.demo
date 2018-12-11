@@ -1,14 +1,14 @@
+button:hover {
+    box-shadow: 1px 1px #000;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 20px 10px; /* A margem 100px é para distancia o header */
+}
 body {
     background-color: #5aaca6;
 }
-
-section{
-    display: flex;
-    width: 100vw;
-    justify-content: flex-end ;
-    margin: 100px 20px 10px; /* A margem 100px é para distancia o header */
-}
-
 /* inicio - bloco do perfil do usuario (canto superior esquerdo)*/
 .perfil {
     width: 250px;
@@ -18,12 +18,11 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: fixed;
-    left: 50px;
     border: 2px solid black;
     border-radius: 5px;
     padding: 0 20px;
     background-color: white;
+    margin-bottom: calc(100vh - 585px);
 }
 .perfil>* {/* pega todos os elementos dentro da div*/
     margin: 7px 0;
@@ -34,61 +33,45 @@ section{
 }
 /* fim - bloco do perfil  */
 
+
+
 /* inicio - feed (aonde vamos colocar doações, vagas, etc...) */
-.feed{
-    width: 60%;
-    margin-right: 150px;
+.feed {
+    width: calc(85% - 250px);/* tirei 250px do bloco do perfil do usuario */
+    min-height: calc(100% - 120px);
 }
-.feedItem{
+.feedItem {
     width: 100%;
-    height: 13%;
     margin: 15px 0;
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     padding: 20px 20px;
 }
-
-.feedItem p{
-    width: 70%;
-    font-size: 11pt;
-}
-
-.tituloSangue{
-    color: red;
-}
-
-.sangue{
+.tituloDeSangue {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
-
-.sangue>img { 
+.tituloDeSangue>h1 {
+    color: red;
+}
+.tituloDeSangue>img { 
     width: 100px;
     height: 100px;
     border-radius: 20px;
 }
-
-.negrito{
-    font-weight: bolder;
-}
-
-.italico{
-    font-style: italic;
-}
-
 .emailDeSangue {
-    margin-top: 10px;
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
+}
+.emailDeSangue>h2 {
+    margin: 0 ; /* tudo h tem margin como padrão, apenas tirando.*/
 }
 .emailDeSangue>input {
     width: 50%;
@@ -105,54 +88,154 @@ section{
     border: none;
 }
 
-.vaga{
+
+.tituloDaVaga {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
-
-.vaga>img {
+.tituloDaVaga>img {
     width: 125px;
     height: 100px;
     border-radius: 20px;
 }
-.vaga>h2 {
+.tituloDaVaga>h1 {
     color: orange;  
 }
-
-.botao{
+.buttonVaga {
     height: 30px;
     width: 150px;
+    background-color: orange;
+    color: white;
     border: none;
     border-radius: 5px;
 }
-
-.indicar{
+.buttonIndicar {
+    height: 30px;
+    width: 150px;
+    background-color: lightgray;
     color: black;
-    background-color:lightgray;
+    border: none;
+    border-radius: 5px;
 }
-
-.voluntario{
-    background-color: orange;
-    color: white;
+/*formatação dos requisitos*/
+.negrito{
+    font-weight: bolder;
 }
-
-.doacao {
+/*fim da formatação dos requisitos*/
+.tituloDoacao {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
-.doacao>h2 {
+.tituloDoacao>h1 {
     color: green;
 }
-.doacao>img {
+.tituloDoacao>img {
     width: 125px;
     height: 100px;
     border-radius: 20px;
 }
-.doar{
+.buttonDoacao {
+    height: 30px;
+    width: 150px;
     background-color: green;
     color: white;
+    border: none;
+    border-radius: 5px;
 }
+/* fim - feed */
+/* inicio - filtro no feed */
+.filtro {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+/*fim - filtro no feed */
+
+/* inicio - alert */
+.alert {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alert>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    width: 500px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #5aaca6;
+    flex-direction: column;
+}
+.alert>div>h2 {
+    margin: 0;
+}
+.alert>div>input {
+    margin: 20px 0;
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.alert>div>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+}
+/* fim - alert */
+/* inicio - alertSangue */
+.alertSangue {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alertSangue>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 4;
+    width: 500px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #5aaca6;
+    text-align: center;
+    flex-direction: column;
+}
+.alertSangue>div>h2 {
+    margin: 0;
+}
+.alertSangue>div>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: red;
+    font-size: 1.1em;
+}
+/* fim - alertSangue */
