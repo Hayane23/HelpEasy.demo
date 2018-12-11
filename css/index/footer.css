@@ -8,17 +8,7 @@ footer {
     align-items: center;
 }
 
-footer {
-    height: 50px;
-    color: white;
-    font-size: 10pt;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer > div{
+footer>div{
     width: 50vw;
     justify-self: flex-end;
     display: flex;

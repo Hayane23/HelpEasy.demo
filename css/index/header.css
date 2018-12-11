@@ -8,15 +8,15 @@
     text-shadow: 1px 1px 1px #5F04B4;
 }
 
-header>a{
+a{
     color: white;
     text-shadow: 1px 1px 1px #111111;
 }
 
-header>a,button, input {
+a,button, input {
     text-decoration: none;
 }
-header>a, button {
+a, button {
     cursor: pointer;
 }
 header, .informacao button {
@@ -55,42 +55,24 @@ header input {
     border-radius: 5px;
     border: none;
 }
-header button a{
-    display: flex;
+header button {
     height: 32px;
     width: 32px;
     border-radius: 50%;
     border: none;
-    justify-content: center;
-    align-items: center;
     background-color: #e93939;
     color: white;
     font-size: 16pt;
-    text-decoration: none;
 }
-header button{
-    border: none;
-    background-color: #5aaca6;
-}
-
 header>a {
     position: absolute;
     right: 12vw;
     bottom: 0;
-    text-decoration: none;
 }
-
-a{
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #111111;
-}
-
 body>section:nth-child(2){
-    z-index: -1;
-    top:70px;
+    margin-top: 70px;
     height: calc(100vh - 70px);
-    position: sticky;
+    position: relative;
 }
 
 .slide2, .slide3, .slide4{
