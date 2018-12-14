@@ -79,8 +79,7 @@ function ir (){
 
 
 function stop (){
-    clearInterval(temp);
-    
+    clearInterval(temp);   
 }
 
 

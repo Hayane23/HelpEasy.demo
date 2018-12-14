@@ -70,12 +70,8 @@ header>a {
     bottom: 0;
 }
 body>section:nth-child(2){
-<<<<<<< HEAD
     margin-top: 70px;
-=======
 	z-index: -1;
-    top:70px;
->>>>>>> 6e91cce9075de546db2682dc41ac49d22dae130f
     height: calc(100vh - 70px);
     position: relative;
 }
